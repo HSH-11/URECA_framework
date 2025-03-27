@@ -102,6 +102,7 @@ public class BookServlet extends HttpServlet {
         System.out.println(jsonStr);
         resp.getWriter().write(jsonStr); 	
 	}
+
 	protected void delete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		BookDao bookDao = new BookDao();
 		int bookId = Integer.parseInt(req.getParameter("bookId"));		
@@ -115,6 +116,7 @@ public class BookServlet extends HttpServlet {
         } else {
             jsonObject.addProperty("result", "fail");
         }
+        
         
         String jsonStr = gson.toJson(jsonObject);
         System.out.println(jsonStr);

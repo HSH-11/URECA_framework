@@ -6,10 +6,12 @@
     <servlet-name>HelloServlet</servlet-name>
     <servlet-class>servlet.HelloServlet</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/HelloServlet</url-pattern>
   </servlet-mapping>
+  
   <display-name>WebBasic</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
