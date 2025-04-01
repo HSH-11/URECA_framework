@@ -47,15 +47,6 @@ public class CustomerServlet extends HttpServlet {
 		resp.getWriter().write(jsonStr);
 	}
 
-//	protected void detail(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//		CustomerDAO CustomerDAO = new CustomerDAO();
-//		// bookId parameter
-//		int bookId = Integer.parseInt(req.getParameter("bookId"));
-//		CustomerDTO CustomerDTO = CustomerDAO.detailBook(bookId);
-//		System.out.println(CustomerDTO);
-//		req.setAttribute("CustomerDTO", CustomerDTO);
-//		req.getRequestDispatcher("/detailForm.jsp").forward(req, resp);
-//	}
 	protected void insert(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		CustomerDAO customerDAO = new CustomerDAO();
 		String name = req.getParameter("name");

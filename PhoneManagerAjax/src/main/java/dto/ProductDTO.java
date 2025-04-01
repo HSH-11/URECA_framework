@@ -1,10 +1,13 @@
 package dto;
 
+import com.google.gson.annotations.SerializedName;
+
 public class ProductDTO {
-	
+	@SerializedName("product_id")
 	private Integer productId;
     private String name;
     private double price;
+    @SerializedName("stock_quantity")
     private int stockQuantity;
     
     public ProductDTO() {}
