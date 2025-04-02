@@ -62,7 +62,7 @@ async function fetchProductList() {
 // 테이블 렌더링
 function renderProductTable(list) {
     console.log("📦 상품 리스트 도착:", list);
-    let html = ""; // ← ✅ 반복문 바깥에서 선언
+    let html = ""; 
 
     list.forEach(product => {
         console.log("🧱 개별 product:", product);
